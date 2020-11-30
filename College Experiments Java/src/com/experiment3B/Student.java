@@ -1,7 +1,7 @@
 // Experiment 3 - B
 // Roll NO : 34
 
-package com.experiment3b;
+package com.experiment3B;
 
 public class Student {
     String name;
