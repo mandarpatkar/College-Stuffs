@@ -1,8 +1,5 @@
 package simplebankdemo;
 
-import simplebankdemo.Account;
-import simplebankdemo.AccountSetup;
-import simplebankdemo.Bank;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -71,13 +68,13 @@ public class Bank {
                     obA.balance();
                     break;
                 case 'w':
-                    if (obA.withdraw() == false) flag = false;
+                    if (!obA.withdraw()) flag = false;
                     break;
                 case 'n':
                     obS.changeName();
                     break;
                 case 'p':
-                    if (obS.changePin() == false) flag = false;
+                    if (!obS.changePin()) flag = false;
                     break;
                 default:
                     System.out.print("Service Not Available!");
@@ -86,7 +83,7 @@ public class Bank {
                     break;
             }
 
-            if (flag == false) break;
+            if (!flag) break;
         }
     }
 }
