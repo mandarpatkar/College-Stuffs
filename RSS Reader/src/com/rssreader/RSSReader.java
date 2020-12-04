@@ -44,7 +44,7 @@ public class RSSReader {
                         tempD = tempD.substring(22, lastPos-3);
                     else
                         tempD = tempD.substring(13, lastPos);
-                    if (tempD.length()>25)
+                    if (tempD.length()>30)
                         tempD=tempD.substring(0,30)+"...";
                     description.add("Description: " + tempD);
                 }
